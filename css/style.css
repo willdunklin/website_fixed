@@ -1,14 +1,15 @@
 /*--Remember the cascade: Later styles override earlier ones and more specific styles override more general ones.--*/
 body {
+  background-image: linear-gradient(to bottom right, #e2c1d8, #cccee6);
   color: #444;
   font-size: 16px;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Gentium Book Basic', serif;
 }
 p {
   margin-bottom: .67em;
 }
 nav, footer {
-  background-color: #444;
+  background-color: #3f3247;
 }
 footer {
   text-align: center;
@@ -19,6 +20,8 @@ footer {
 nav ul {
   list-style: none;
   padding: 1em;
+  display: flex;
+  justify-content: space-around;
 }
 nav a:link, nav a:visited {
   color: #D0D0D0;
@@ -36,16 +39,24 @@ header {
   width: 510px;
   margin-top: 2em;
   margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
 }
 header img {
   width: 100%;
   margin: 0 auto;
 }
 header h1 {
+  text-align: center;
   margin: 0 auto;
   padding: 0 auto;
+  font-weight: 900;
+  font-family: 'Lato', sans-serif;
+  text-transform: capitalize;
 }
 .small {
+  font-weight: 300;
+  font-size: 28px;
   margin-top: 1em;
 }
 /*-- Article Styles--*/
@@ -53,32 +64,49 @@ article {
   width: 768px;
   font-size: 18px;
   line-height: 1.3;
+  margin-left: auto;
+  margin-right: auto;
 }
 article figure {
   width: 39%;
   margin: 0 0 1.25em 1.25em;
+  float: right;
 }
 article figcaption {
+  font-size: 14px;
+  font-weight: 100;
 }
 .pagination {
   margin-top: 2em;
   margin-bottom: 2em;
   width: 96%;
+  display: flex;
+  justify-content: center;
 }
 a.button {
-  border: 1px solid #888;
+  border: 1px solid #3f3247;
   padding: .4em 1em .4em 1em;
   text-decoration: none;
-  color: #888;
+  color: #3f3247;
   border-radius: 200px;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 80%;
 }
 a.button:hover, a.button:active {
-  border: 1px solid #444;
+  background-color: #3f3247;
+  border: 1px solid #3f3247;
   text-decoration: none;
-  color: #222;
+  color: #fff;
+}
+.left {
+  flex-basis: 40;
+}
+.center {
+  flex-basis: 10;
+}
+.right {
+  flex-basis: 40;
 }
 /*-- changes header and article width on small screens --*/
 @media screen and (max-width: 768px) {
