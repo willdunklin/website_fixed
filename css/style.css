@@ -81,7 +81,7 @@ article figcaption {
   margin-bottom: 2em;
   width: 96%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 a.button {
   border: 1px solid #3f3247;
@@ -99,14 +99,13 @@ a.button:hover, a.button:active {
   text-decoration: none;
   color: #fff;
 }
-.left {
-  flex-basis: 40;
-}
-.center {
-  flex-basis: 10;
-}
-.right {
-  flex-basis: 40;
+.dropcap {
+  float: left;
+  font-weight: 1000;
+  font-size: 65px;
+  line-height: 40px;
+  padding-top: 5px;
+  padding-right: 2px;
 }
 /*-- changes header and article width on small screens --*/
 @media screen and (max-width: 768px) {

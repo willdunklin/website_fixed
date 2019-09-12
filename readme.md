@@ -13,7 +13,7 @@ This file contains a list of all the tasks that remain, in basically the same or
 ## In /css/style.css
 <!-- + Set the default font on the body to 'Gentium Book Basic' with a fallback to serif, so it will be inherited by the rest of the elements. -->
 
-+ Use flex display to lay out the main menu in a horizontal row and use justify-content to distribute the links as space-between.
+<!-- + Use flex display to lay out the main menu in a horizontal row and use justify-content to distribute the links as space-between. -->
 
 <!-- + Use left and right auto margin to center both the header and article sections horizontally on the page. -->
 
